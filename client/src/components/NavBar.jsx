@@ -14,7 +14,7 @@ const NavBar = () => {
             await axios.post("http://localhost:8000/api/auth/logout", { withCredentials: true });
             localStorage.removeItem("user");
             setUser(null);
-            navigate("/login");
+            navigate("/");
         } catch (err) {
             console.log("Error: ", JSON.stringify(err.response.data.msg));
             alert('Error al cerrar sesión')
