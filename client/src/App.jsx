@@ -26,7 +26,7 @@ function App() {
   return (
     <UserContext.Provider value={objetoContexto}>
       <Routes>
-        <Route path="/login" element={
+        <Route path="/" element={
           <PublicRoute>
             <Login />
           </PublicRoute>
